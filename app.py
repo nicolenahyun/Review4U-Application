@@ -23,10 +23,10 @@ from spacy.lang.en import English
 # spacy.load("en_core_web_sm")
 import streamlit as st
 
-# Lemmatization
+# Lemmatization(표제어 추출)
 wordnet = WordNetLemmatizer()
 
-# Stop word
+# Stop word(불용어)
 stop_words = stopwords.words('english')
 
 nlp = spacy.load("en_core_web_sm")
@@ -173,8 +173,9 @@ def main():
 
     #-------------------------------Header-----------------------
     st.markdown('<h1 style="text-align:center;color:white;font-weight:bolder;font-size:80px;">Hotel Review<br>Sentiment Analysis</h1>', unsafe_allow_html=True)
-    st.image('images/hotel.jpg', width=700)
     st.markdown('#### This is an analysis based on data from Tripadvisor')
+    st.image('images/hotel.jpg', width=700)
+    
 
     # following lines create boxes in which user can enter data required to make prediction
     # Textbox for text user is entering
@@ -186,9 +187,10 @@ def main():
         predict = Prediction(text)
         st.success('The Sentiment of the review is {}'.format(predict))
         
+        
     #if st.button("IMP Attributes"):
         st.subheader("Important Attributes in Reviews")
-        imp_att=keywords(text)
+        imp_att = keywords(text)
         for i in imp_att:
             st.success(i)
     
