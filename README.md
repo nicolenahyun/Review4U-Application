@@ -1,7 +1,7 @@
 # Hotel Review Sentiment Analysis | Review4U Web Application
 - 프로젝트 기간: 2021.11.08 - 2021.11.11
 ---
-![img1](./images/img1.png)
+![img1](./images/img1.PNG)
 ## 프로젝트 배경
 **감성 분석**은 텍스트에 나타난 주관적 요소인 긍정적 감정과 부정적 감정을 판별해 이를 수치나 도식, 등급 등으로 정량화하는 작업을 말합니다.
 
