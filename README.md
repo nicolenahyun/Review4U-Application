@@ -41,3 +41,4 @@
 ## 결과
 - 테스트 데이터텟(전체 데이터의 20%)에 대해서 Accyracy 약 0.98, F1 score 약 0.99인 모델을 만듦
 - 구현한 모델로 Streamlit으로 앱을 만들고 heroku를 통해 웹에 배포함
+![review4u](https://user-images.githubusercontent.com/87054081/147868341-2b05c447-d494-4fb1-b80b-3796924e2643.gif)
